@@ -14,6 +14,17 @@
     <![endif]-->
 
     <title>Matrix-class-library by XC-Zhang</title>
+	
+    <style>
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+      .member-name {
+        font-family: 'Courier New';
+        
+      }
+    </style>
   </head>
 
   <body>
@@ -29,145 +40,323 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h1>
-<a name="matrix-class-library" class="anchor" href="#matrix-class-library"><span class="octicon octicon-link"></span></a>Matrix-Class-Library</h1>
+            <a name="matrix-class-library" class="anchor" href="#matrix-class-library"><span class="octicon octicon-link"></span></a>Matrix-Class-Library
+          </h1>
 
-<p>A class library dealing with matrices operation, implemented with VB.Net.</p>
+          <p>A class library dealing with matrices operation, implemented with VB.Net.</p>
 
-<p>All comments and some strings in codes are written in <b>Chinese</b>.</p>
+          <p>All comments and some strings in codes are written in <b>Chinese</b>.</p>
 
-<section id="namespaces">
-	<h2>Namespaces</h2>
-	<table cellspacing="10">
-		<tr>
-			<td onClick="show_and_hide(2, 1)">LinearAlgebra</td>
-			<td>LinearAlgebra namespace provides classes which dealing with linear algebra operations.</td>
-		</tr>
-	</table>
-</section>
+          <section id="namespaces">
+            <h2>Namespaces</h2>
+            <table>
+              <tr>
+                <td class="member-name" onClick="show_and_hide(2, 1)">LinearAlgebra</td>
+                <td>LinearAlgebra namespace provides classes which dealing with linear algebra operations.</td>
+              </tr>
+            </table>
+          </section>
 
-<section id="classes">
-	<h2>LinearAlgebra Namespace</h2>
-	<p onClick="show_and_hide(1, 2)">Back to namespaces</p>
-	<table cellspacing="10">
-		<tr>
-			<td onClick="show_and_hide(3, 2)">Matrix</td>
-			<td>Matrix class deals with matrix operations.</td>
-		</tr>
-		<tr>
-			<td onClick="show_and_hide(4, 2)">Vector</td>
-			<td>Vector class deals with vector operations.</td>
-		</tr>
-	</table>
-</section>
+          <section id="classes">
+            <h2>LinearAlgebra Namespace</h2>
+            <p onClick="show_and_hide(1, 2)">Back to namespaces</p>
+            <table>
+              <tr>
+                <td class="member-name" onClick="show_and_hide(3, 2)">Matrix</td>
+                <td>Matrix class deals with matrix operations.</td>
+              </tr>
+              <tr>
+                <td class="member-name" onClick="show_and_hide(4, 2)">Vector</td>
+                <td>Vector class deals with vector operations.</td>
+              </tr>
+            </table>
+          </section>
 
-<section id="matrix_class">
-	<h2>Matrix Class</h2>
-	<p onClick="show_and_hide(2, 3)">Back to classes</p>
-	<h3>Nested classes</h3>
-	<h3>Constructors</h3>
-	<table>
-		<tr>
-			<td>Matrix(int, int)</td>
-			<td>Instantiate a matrix with specified size.</td>
-		</tr>
-		<tr>
-			<td>Matrix(double[,])</td>
-			<td>Instantiate a matrix with specified elements.</td>
-		</tr>
-	</table>
-	<h3>Fields</h3>
-	<h3>Indexers</h3>
-	<table>
-		<tr>
-			<td>Element(int, int)</td>
-			<td>Get or set the value of matrix in specified position.</td>
-		</tr>
-	</table>
-	<h3>Properties</h3>
-	<table>
-		<tr>
-			<td>ColumnCounts</td>
-			<td>Get column counts of the matrix.</td>
-		</tr>
-		<tr>
-			<td>Columns</td>
-			<td>Get column collections of the matrix.</td>
-		</tr>
-		<tr>
-			<td>Entries</td>
-			<td>Get the entries of the matrix.</td>
-		</tr>
-		<tr>
-			<td>IsIdentity</td>
-			<td>Check whether the matrix is identity.</td>
-		</tr>
-		<tr>
-			<td>RowCounts</td>
-			<td>Get row counts of the matrix.</td>
-		</tr>
-		<tr>
-			<td>Rows</td>
-			<td>Get the row collection of the matrix.</td>
-		</tr>
-	</table>
-	<h3>Methods</h3>
-	<table>
-		<tr>
-			<td>Add(Matrix)</td>
-			<td>Add two matrices and return the results.</td>
-		</tr>
-		<tr>
-			<td>Clone</td>
-			<td>return another instance of matrix of which elements is exactly same with those of this matrix.</td>
-		</tr>
-		<tr>
-			<td>Equals(object)</td>
-			<td>Check whether type of <i>object</i> is matrix and whether the elements of it is the same with those of this matrix.</td>
-		</tr>
-		<tr>
-			<td>Identity(int)</td>
-			<td>Return an identity matrix with specified size.</td>
-		</tr>
-		<tr>
-			<td>Invert</td>
-			<td>Return the invertion of the matrix.</td>
-		</tr>
-		<tr>
-			<td>Multiply(Matrix)</td>
-			<td>Multiply two matrices and return the results.</td>
-		</tr>
-		<tr>
-			<td>ReDim(int, int)</td>
-			<td>Resize the matrix and preserve original elements.</td>
-		</tr>
-		<tr>
-			<td>ScalarMultiply(double)</td>
-			<td>Multiply the value of parameter with the matrix and return the results.</td>
-		</tr>
-		<tr>
-			<td>Subtract(Matrix)</td>
-			<td>Subtract two matrices and return the results.</td>
-		</tr>
-		<tr>
-			<td>ToString</td>
-			<td>Return a string that displays all the elements in a rectangle view.</td>
-		</tr>
-		<tr>
-			<td>Transpose</td>
-			<td>Return the transpose of the matrix.</td>
-		</tr>
-	</table>
-</section>
+          <section id="matrix_class">
+            <h2>Matrix Class</h2>
+            <p onClick="show_and_hide(2, 3)">Back to classes</p>
+            <h3>Nested classes</h3>
+            <table>
+              <tr>
+                <td class="member-name">MatrixRowCollection</td>
+                <td>Represent a row of a matrix.</td>
+              </tr>
+              <tr>
+                <td class="member-name">MatrixColumnCollection</td>
+                <td>Represent a column of a matrix.</td>
+              </tr>
+            </table>
+            <h3>Constructors</h3>
+            <table>
+              <tr>
+                <td class="member-name">Matrix(int, int)</td>
+                <td>Instantiate a matrix with specified size.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Matrix(double[,])</td>
+                <td>Instantiate a matrix with specified elements.</td>
+              </tr>
+            </table>
+            <h3>Fields</h3>
+            <h3>Indexers</h3>
+            <table>
+              <tr>
+                <td class="member-name">Element(int, int)</td>
+                <td>Get or set the value of matrix in specified position.</td>
+              </tr>
+            </table>
+            <h3>Properties</h3>
+            <table>
+              <tr>
+                <td class="member-name">ColumnCounts</td>
+                <td>Get column counts of the matrix.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Columns</td>
+                <td>Get column collections of the matrix.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Entries</td>
+                <td>Get the entries of the matrix.</td>
+              </tr>
+              <tr>
+                <td class="member-name">IsIdentity</td>
+                <td>Check whether the matrix is identity.</td>
+              </tr>
+              <tr>
+                <td class="member-name">RowCounts</td>
+                <td>Get row counts of the matrix.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Rows</td>
+                <td>Get the row collection of the matrix.</td>
+              </tr>
+            </table>
+            <h3>Methods</h3>
+            <table>
+              <tr>
+                <td class="member-name">Add(Matrix)</td>
+                <td>Add two matrices and return the results.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Clone</td>
+                <td>return another instance of matrix of which elements is exactly same with those of this matrix.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Equals(object)</td>
+                <td>Check whether type of <i>object</i> is matrix and whether the elements of it is the same with those of this matrix.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Identity(int)</td>
+                <td>Return an identity matrix with specified size.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Invert</td>
+                <td>Return the invertion of the matrix.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Multiply(Matrix)</td>
+                <td>Multiply two matrices and return the results.</td>
+              </tr>
+              <tr>
+                <td class="member-name">ReDim(int, int)</td>
+                <td>Resize the matrix and preserve original elements.</td>
+              </tr>
+              <tr>
+                <td class="member-name">ScalarMultiply(double)</td>
+                <td>Multiply the value of parameter with the matrix and return the results.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Subtract(Matrix)</td>
+                <td>Subtract two matrices and return the results.</td>
+              </tr>
+              <tr>
+                <td class="member-name">ToString</td>
+                <td>Return a string that displays all the elements in a rectangle view.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Transpose</td>
+                <td>Return the transpose of the matrix.</td>
+              </tr>
+            </table>
+            <h3>Operators</h3>
+            <table>
+              <tr>
+                <td class="member-name">+(Matrix, Matrix)</td>
+                <td>Add two matrices.</td>
+              </tr>
+              <tr>
+                <td class="member-name">-(Matrix)</td>
+                <td>Return the minus matrix.</td>
+              </tr>
+              <tr>
+                <td class="member-name">-(Matrix, Matrix)</td>
+                <td>Subtract two matrices.</td>
+              </tr>
+              <tr>
+                <td class="member-name">*(double, Matrix)</td>
+                <td>Do a scalar multiple.</td>
+              </tr>
+              <tr>
+                <td class="member-name">*(Matrix, double)</td>
+                <td>Do a scalar multiple.</td>
+              </tr>
+              <tr>
+                <td class="member-name">*(Matrix, Matrix)</td>
+                <td>Multiply two matrices.</td>
+              </tr>
+              <tr>
+                <td class="member-name">==(Matrix, Matrix)</td>
+                <td>Check whether two matrices are the same.</td>
+              </tr>
+              <tr>
+                <td class="member-name">!=(Matrix, Matrix)</td>
+                <td>Check whether two matrices are different.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Widening(Vector)</td>
+                <td>Change a vector into a matrix.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Narrowing(Matrix)</td>
+                <td>Change a matrix into a vector.</td>
+              </tr>
+            </table>
+          </section>
 
-<section id="vector_class">
-	<h2>Vector Class</h2>
-	<p onClick="show_and_hide(2, 4)">Back to classes</p>
-	<h3>Nested classes</h3>
-	<h3>Constructors</h3>
-	<h3>Fields</h3>
-	<h3>Properties</h3>
-	<h3>Methods</h3>
-</section>
+          <section id="vector_class">
+            <h2>Vector Class</h2>
+            <p onClick="show_and_hide(2, 4)">Back to classes</p>
+            <h3>Constructors</h3>
+            <table>
+              <tr>
+                <td class="member-name">Vector(int)</td>
+                <td>Instantiate a vector with specified dimensions.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Vector(double[])</td>
+                <td>Instantiate a vector with specified elements.</td>
+              </tr>
+            </table>
+            <h3>Fields</h3>
+            <h3>Properties</h3>
+            <table>
+              <tr>
+                <th class="member-name">Dimensions</th>
+                <th>Get the dimensions of the vector.</th>
+              </tr>
+              <tr>
+                <th class="member-name">Elements</th>
+                <th>Get an array of double containing the elements of the vector.</th>
+              </tr>
+              <tr>
+                <th class="member-name">IsNullVector</th>
+                <th>Check whether the vector is a null vector.</th>
+              </tr>
+              <tr>
+                <th class="member-name">IsUnitVector</th>
+                <th>Check whether the vector is a unit vector.</th>
+              </tr>
+              <tr>
+                <th class="member-name">Length</th>
+                <th>Get the length of the vector.</th>
+              </tr>
+            </table>
+            <h3>Methods</h3>
+            <table>
+              <tr>
+                <td class="member-name">AbsMax</td>
+                <td>Return the maximum absolute value of the elements.</td>
+              </tr>
+              <tr>
+                <td class="member-name">AbsMin</td>
+                <td>Return the minimum absolute value of the elements.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Add(Vector)</td>
+                <td>Add two vectors and return the result.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Clone</td>
+                <td>Return another instance of which elements are exactly the same with those of this vector.</td>
+              </tr>
+              <tr>
+                <td class="member-name">CrossProduct</td>
+                <td>Return cross product of two vectors.</td>
+              </tr>
+              <tr>
+                <td class="member-name">DotProduct(Vector)</td>
+                <td>Return dot product of two vectors.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Equals(object)</td>
+                <td>Check whether the type of object is Vector and whether its elements are exactly the same with those of this vector.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Max</td>
+                <td>Return the maximum element of the vector.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Min</td>
+                <td>Return the minimum element of the vector.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Normalize</td>
+                <td>Normalize the vector making it become a unit vector.</td>
+              </tr>
+              <tr>
+                <td class="member-name">ScalarMultiple</td>
+                <td>Multiply a double value with the vector and return the result.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Subtract(Vector)</td>
+                <td>Subtract two vectors and return the result.</td>
+              </tr>
+              <tr>
+                <td class="member-name">ToString</td>
+                <td>Return all the elements in a string format.</td>
+              </tr>
+            </table>
+            <h3>Operators</h3>
+            <table>
+              <tr>
+                <td class="member-name">+(Vector, Vector)</td>
+                <td>Add two vectors.</td>
+              </tr>
+              <tr>
+                <td class="member-name">-(Vector)</td>
+                <td>Return the minus vector.</td>
+              </tr>
+              <tr>
+                <td class="member-name">-(Vector, Vector)</td>
+                <td>Subtract two vectors.</td>
+              </tr>
+              <tr>
+                <td class="member-name">*(double, Vector)</td>
+                <td>Do a scalar multiple.</td>
+              </tr>
+              <tr>
+                <td class="member-name">*(Vector, double)</td>
+                <td>Do a scalar multiple.</td>
+              </tr>
+              <tr>
+                <td class="member-name">==(Vector, Vector)</td>
+                <td>Return whether elements of two vectors are the same.</td>
+              </tr>
+              <tr>
+                <td class="member-name">!=(Vector, Vector)</td>
+                <td>Return whether elements of two vectors are different.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Widening(Vector)</td>
+                <td>Change a vector into a matrix.</td>
+              </tr>
+              <tr>
+                <td class="member-name">Narrowing(Vector)</td>
+                <td>Change a matrix into a vector.</td>
+              </tr>
+            </table>
+          </section>
 
         </section>
 
